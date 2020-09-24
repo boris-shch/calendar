@@ -1,0 +1,44 @@
+#include <windows.h>
+#include "calendar.h"
+aaa ICON "calendar.ico"
+
+// Not all compilers accept reserved word "MANIFEST"
+//1 MANIFEST "manifest.2"
+1 24 "manifest.2"
+
+#include <windows.h>
+VS_VERSION_INFO VERSIONINFO
+// -------------------------
+FILEVERSION 1,0,0,0
+// -------------------------
+PRODUCTVERSION 1,0,0,0
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0x0L
+FILEOS 0x4
+FILETYPE 0x1
+FILESUBTYPE 0x0L
+BEGIN
+BLOCK "StringFileInfo"
+BEGIN
+	BLOCK "041904E3"
+	BEGIN
+                VALUE "CompanyName","\0"
+		VALUE "FileDescription", "Application by Boris Shcherbina, 2020\0"
+		VALUE "FileVersion", "1.0.0.0\0"
+		VALUE "InternalName", "\0"
+		VALUE "LegalCopyright", "© Boris Shcherbina, 2020\0"
+		VALUE "LegalTrademarks", "\0"
+		VALUE "OriginalFilename", "\0"
+		VALUE "ProductName", "\0"
+// -------------------------
+		VALUE "ProductVersion", "1, 0, 0, 0\0"
+// -------------------------
+	END
+END
+
+BLOCK "VarFileInfo"
+BEGIN
+	VALUE "Translation", 0x0419,0x04E3
+END
+END
+
