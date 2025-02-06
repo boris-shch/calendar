@@ -1,7 +1,7 @@
 del *.exe
-windres -i calendar.rc -F pe-i386 --input-format=rc -o calendar.res -O coff
+windres calendar.rc -F pe-i386 -o calendar.res -O coff
 g++ -o calendar.exe -std=c++11 -Wall calendar.res calendar.cpp -m32 -mwindows -lComctl32 -static-libgcc
 move calendar.exe calendar_32.exe
-windres -i calendar.rc --input-format=rc -o calendar.res -O coff
+windres calendar.rc -o calendar.res -O coff
 g++ -o calendar.exe -std=c++11 -Wall calendar.res calendar.cpp -mwindows -lComctl32 -static-libgcc
 move calendar.exe calendar_64.exe
